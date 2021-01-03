@@ -144,7 +144,7 @@ impl Component for Home {
         <div>
           <span>{ format!("Cart Value: {:.2}", cart_value) }</span>
           <span>{ products }</span>
-          </div>
+        </div>
       }
     }
   }
