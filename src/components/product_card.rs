@@ -30,11 +30,11 @@ impl Component for ProductCard {
   fn view(&self) -> Html {
     let onclick = self.props.on_add_to_cart.reform(|_| ());
     html! {
-      <div>
-        <img src={&self.props.product.image}/>
-        <div>{&self.props.product.name}</div>
-        <div>{"$"}{&self.props.product.price}</div>
-        <button onclick=onclick>{"Add To Cart"}</button>
+      <div class="product_card_container">
+        <img class="product_card_image" src={&self.props.product.image}/>
+        <div class="product_card_name">{&self.props.product.name}</div>
+        <div class="product_card_price">{"$"}{&self.props.product.price}</div>
+        <button class="product_atc_button" onclick=onclick>{"Add To Cart"}</button>
       </div>
     }
   }

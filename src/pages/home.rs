@@ -137,10 +137,13 @@ impl Component for Home {
       }
     } else {
       html! {
-        <div>
-          <span>{ format!("Cart Value: {:.2}", cart_value) }</span>
-          <span>{ products }</span>
-        </div>
+        <section>
+          <div class="navbar">
+            <div class="navbar_title">{"Rust-SPA"}</div>
+            <div class="navbar_cart_value">{format!("${:.2}", cart_value)}</div>
+          </div>
+          <div class="product_card_list">{ products }</div>
+        </section>
       }
     }
   }
