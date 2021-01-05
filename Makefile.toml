@@ -5,4 +5,4 @@ watch = { ignore_pattern = "static/*" }
 
 [tasks.serve]
 command = "simple-http-server"
-args = ["-i", "./static/", "-p", "3000", "--nocache", "--try-file", "./static/index.html"]
+args = ["-i", "./static/", "-p", "4000", "--nocache", "--try-file", "./static/index.html"]
